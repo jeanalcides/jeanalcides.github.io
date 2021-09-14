@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #0f1923;
+    --secondary-color: #1a242d;
+    --terciary-color: #202342;
+
+    --grey-primary: #939498;
+
+    --yellow-primary: #f0d82a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    
+}
+
+.container-full {
+    width: 100%;
+}
+
+.container-lg {
+    width: 80%;
+}
+
+.container-md {
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justfy-center {
+    justify-content: center;
+}
+
+.justfy-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justfy-right {
+    justify-content: right;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.header{
+    height: 100vh;
+}
+
+.bar-sup {
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.text-logo {
+    color: var(--grey-primary);
+    font-size: 1.5rem;
+}
+
+.text-logo span {
+    color: var(--yellow-primary);
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 0 10px;
+    color: var(--grey-primary);
+}
+
+.nav-item:hover {
+    color: var(--yellow-primary);
+    transition: 500ms;
+}
