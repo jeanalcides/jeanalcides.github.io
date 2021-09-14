@@ -5,6 +5,7 @@
     --secondary-color: #1a242d;
     --terciary-color: #202342;
 
+    --white-primary: #FFFFFF;
     --grey-primary: #939498;
 
     --yellow-primary: #f0d82a;
@@ -63,6 +64,9 @@ body {
 
 .header{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bar-sup {
@@ -82,7 +86,7 @@ body {
 
 .nav {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav a{
@@ -91,11 +95,59 @@ body {
 
 .nav-item {
     list-style: none;
-    padding: 0 10px;
     color: var(--grey-primary);
 }
 
 .nav-item:hover {
     color: var(--yellow-primary);
     transition: 500ms;
+}
+
+.header-full {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-primary);
+}
+
+.left-header {
+    grid-row: 1/1;
+}
+
+.left-header .text-logo{
+    font-size: 4rem;
+}
+
+.simple-text-header {
+    font-size: 1.5rem;
+}
+
+.simple-text-header,
+.simple-description-header {
+    color: var(--grey-primary);
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+    color: var(--white-primary);
+}
+
+.right-header {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    background-image: url("/res/img/me_two.jpg");
+    background-size: cover;
+    background-position: 0px;
+    background-position-y: -50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px var(--primary-color);
+    margin-left: 20px;
 }
